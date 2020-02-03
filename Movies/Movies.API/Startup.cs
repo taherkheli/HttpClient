@@ -29,15 +29,15 @@ namespace Movies.API
                 // Return a 406 when an unsupported media type was requested
                 options.ReturnHttpNotAcceptable = true;
 
-                // Add XML formatters
-                options.OutputFormatters.Add(new XmlSerializerOutputFormatter());
-                options.InputFormatters.Add(new XmlSerializerInputFormatter(options));
+              // Add XML formatters
+              options.OutputFormatters.Add(new XmlSerializerOutputFormatter());
+              options.InputFormatters.Add(new XmlSerializerInputFormatter(options));
 
-                // Set XML as default format instead of JSON - the first formatter in the 
-                // list is the default, so we insert the input/output formatters at 
-                // position 0
-                //options.OutputFormatters.Insert(0,new XmlSerializerOutputFormatter());
-                //options.InputFormatters.Insert(0, new XmlSerializerInputFormatter(options));
+              // Set XML as default format instead of JSON - the first formatter in the 
+              // list is the default, so we insert the input/output formatters at 
+              // position 0
+              //options.OutputFormatters.Insert(0, new XmlSerializerOutputFormatter());
+              //options.InputFormatters.Insert(0, new XmlSerializerInputFormatter(options));
             }
             ).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             
