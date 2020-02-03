@@ -1,0 +1,5 @@
+
+installed NSwagStudio
+https://github.com/RicoSuter/NSwag/wiki/NSwagStudio
+
+
